@@ -9,9 +9,9 @@ class Model
 public:
 	Model();
 	void IncreaseNumber();
-	const int getNumber();
+	const int GetNumber();
 private:
-	int number;
+	int nNumber;
 };
 
 #endif

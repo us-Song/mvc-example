@@ -4,15 +4,15 @@
 
 Model::Model()
 {
-	number = 10;
+	nNumber = 10;
 }
 
 void Model::IncreaseNumber()
 {
-	number += 10;
+	nNumber += 10;
 }
 
-const int Model::getNumber()
+const int Model::GetNumber()
 {
-	return number;
+	return nNumber;
 }

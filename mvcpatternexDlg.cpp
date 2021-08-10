@@ -160,9 +160,9 @@ void CmvcpatternexDlg::OnBnClickedButton()// 클릭 이벤트 발생
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
 	
-	//theApp.GetController()->clicked();//컨트롤러를 이용해서 모델변수를 변경한다.
+	theApp.GetController()->clicked();//컨트롤러를 이용해서 모델변수를 변경한다.
 	CString strTmp;
 	//theApp.GetModel()->getNumber();
-	strTmp.Format(_T("%d"), theApp.GetModel()->getNumber());
-	MessageBox(_T("number=")+strTmp, _T("bye"), MB_OK);
+	strTmp.Format(_T("%d"), theApp.GetModel()->GetNumber());
+	MessageBox(_T("nNumber=")+strTmp, _T("bye"), MB_OK);
 }

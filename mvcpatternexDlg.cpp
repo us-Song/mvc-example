@@ -159,5 +159,7 @@ HCURSOR CmvcpatternexDlg::OnQueryDragIcon()
 void CmvcpatternexDlg::OnBnClickedButton()
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
-	cont->clicked();
+	
+	theApp.GetController()->clicked();
+	MessageBox(_T("hi"),_T("bye"),MB_OK);
 }

@@ -3,10 +3,6 @@
 
 #include "Model.h"
 
-#endif
-
-
-
 class Controller
 {
 public:
@@ -15,3 +11,5 @@ public:
 private:
 	Model* model;
 };
+
+#endif

@@ -35,4 +35,5 @@ public:
 	afx_msg void OnBnClickedButton();
 private:
 	Controller* cont;
+	Model* model;
 };

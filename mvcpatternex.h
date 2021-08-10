@@ -34,7 +34,7 @@ public:
 	{
 		return model;
 	}
-	Controller* GetControoler()
+	Controller* GetController()
 	{
 		return cont;
 	}

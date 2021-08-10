@@ -25,13 +25,17 @@ CmvcpatternexApp::CmvcpatternexApp()
 {
 	// TODO: 여기에 생성 코드를 추가합니다.
 	// InitInstance에 모든 중요한 초기화 작업을 배치합니다.
+
 }
 
 CmvcpatternexApp::~CmvcpatternexApp()
 {
-	delete model;
+	// TODO: 여기에 생성 코드를 추가합니다.
+	// InitInstance에 모든 중요한 초기화 작업을 배치합니다.
 	delete cont;
+	delete model;
 }
+
 // 유일한 CmvcpatternexApp 개체입니다.
 
 CmvcpatternexApp theApp;
@@ -72,9 +76,8 @@ BOOL CmvcpatternexApp::InitInstance()
 
 	CmvcpatternexDlg dlg;
 
-	model = new Model;
-	cont = new Controller(model);
-	
+	model = new Model;//모델 null안되게 생성
+	cont = new Controller(model);// 컨트롤 생성
 
 	m_pMainWnd = &dlg;
 	INT_PTR nResponse = dlg.DoModal();

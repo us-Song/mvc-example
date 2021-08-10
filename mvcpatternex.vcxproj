@@ -183,7 +183,9 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Controller.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Model.h" />
     <ClInclude Include="mvcpatternex.h" />
     <ClInclude Include="mvcpatternexDlg.h" />
     <ClInclude Include="pch.h" />
@@ -191,6 +193,8 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="Model.cpp" />
     <ClCompile Include="mvcpatternex.cpp" />
     <ClCompile Include="mvcpatternexDlg.cpp" />
     <ClCompile Include="pch.cpp">

@@ -65,6 +65,7 @@ BEGIN_MESSAGE_MAP(CmvcpatternexDlg, CDialogEx)
 	ON_WM_SYSCOMMAND()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_BN_CLICKED(IDC_BUTTON1, &CmvcpatternexDlg::OnBnClickedButton)
 END_MESSAGE_MAP()
 
 
@@ -153,3 +154,9 @@ HCURSOR CmvcpatternexDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+
+
+void CmvcpatternexDlg::OnBnClickedButton()
+{
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+}

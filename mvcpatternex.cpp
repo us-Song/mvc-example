@@ -20,6 +20,7 @@ END_MESSAGE_MAP()
 
 
 // CmvcpatternexApp 생성
+//이게 view라고 생각하면됨, 이벤트가 발생하면 컨트롤러를 호출함 
 
 CmvcpatternexApp::CmvcpatternexApp()
 {
@@ -28,7 +29,7 @@ CmvcpatternexApp::CmvcpatternexApp()
 
 }
 
-CmvcpatternexApp::~CmvcpatternexApp()
+CmvcpatternexApp::~CmvcpatternexApp()// 동적 할당 해제
 {
 	// TODO: 여기에 생성 코드를 추가합니다.
 	// InitInstance에 모든 중요한 초기화 작업을 배치합니다.
@@ -76,8 +77,8 @@ BOOL CmvcpatternexApp::InitInstance()
 
 	CmvcpatternexDlg dlg;
 
-	model = new Model;//모델 null안되게 생성
-	cont = new Controller(model);// 컨트롤 생성
+	model = new Model;//모델 null안되게 생성, 동적할당
+	cont = new Controller(model);// 컨트롤 생성, 동적할당
 
 	m_pMainWnd = &dlg;
 	INT_PTR nResponse = dlg.DoModal();

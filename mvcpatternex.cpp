@@ -27,7 +27,11 @@ CmvcpatternexApp::CmvcpatternexApp()
 	// InitInstance에 모든 중요한 초기화 작업을 배치합니다.
 }
 
-
+CmvcpatternexApp::~CmvcpatternexApp()
+{
+	delete model;
+	delete cont;
+}
 // 유일한 CmvcpatternexApp 개체입니다.
 
 CmvcpatternexApp theApp;
@@ -67,6 +71,11 @@ BOOL CmvcpatternexApp::InitInstance()
 	SetRegistryKey(_T("로컬 애플리케이션 마법사에서 생성된 애플리케이션"));
 
 	CmvcpatternexDlg dlg;
+
+	model = new Model;
+	cont = new Controller(model);
+	
+
 	m_pMainWnd = &dlg;
 	INT_PTR nResponse = dlg.DoModal();
 	if (nResponse == IDOK)
